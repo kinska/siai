@@ -1,0 +1,7 @@
+let listazakupow = ["Mleko", "Pieczywo", "Jabłka"];
+
+console.log("Wielkość tablicy:", listazakupow.length);
+
+listazakupow[1] = "Banan";
+
+console.log("Zawartość tablicy:", listazakupow);

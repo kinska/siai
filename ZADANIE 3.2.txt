@@ -1,0 +1,33 @@
+let listazakupow = [];
+
+listazakupow.push("Mleko", "Pieczywo", "Jabłka");
+
+let indexPieczywo = listazakupow.indexOf("Pieczywo");
+
+listazakupow.splice(indexPieczywo, 1, "Banan", "Jajka");
+
+listazakupow.pop();
+
+console.log("Zawartość tablicy po usunięciu ostatniego elementu:", listazakupow);
+
+listazakupow.sort();
+
+console.log("Posortowana lista:", listazakupow);
+
+let indexMleko = listazakupow.indexOf("Mleko");
+
+console.log("Indeks elementu 'Mleko':", indexMleko);
+
+let indexBanan = listazakupow.indexOf("Banan");
+
+listazakupow.splice(indexBanan + 1, 0, "Marchew", "Sałata");
+
+let nowaLista = ["Sok", "Pop"];
+
+listazakupow = listazakupow.concat(nowaLista, nowaLista);
+
+let ostatniIndeksPop = listazakupow.lastIndexOf("Pop");
+
+console.log("Indeks ostatniego wystąpienia 'Pop':", ostatniIndeksPop);
+
+console.log("Ostateczna wersja listy zakupów:", listazakupow);
