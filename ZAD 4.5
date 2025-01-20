@@ -1,0 +1,33 @@
+let prize = prompt("Wybierz liczbę z przedziału od 0 do 10:");
+prize = Number(prize);
+let message = "Wybrana opcja to: " + prize + ". ";
+switch (prize) {
+    case 0:
+        message += "Nagroda: Długopis.";
+        break;
+    case 1:
+        message += "Nagroda: Kubek.";
+        break;
+    case 2:
+        message += "Nagroda: Notatnik.";
+        break;
+    case 3:
+    case 4:
+        message += "Nagroda: Książka.";
+        break;
+    case 5:
+    case 6:
+    case 7:
+        message += "Nagroda: Bon upominkowy.";
+        break;
+    case 8:
+    case 9:
+        message += "Nagroda: Powerbank.";
+        break;
+    case 10:
+        message += "Nagroda: Laptop!";
+        break;
+    default:
+        message += "Niestety, nie wybrałeś poprawnej liczby.";
+}
+console.log(message);
