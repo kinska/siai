@@ -1,0 +1,11 @@
+let wiek = prompt("Podaj swój wiek:");
+wiek = Number(wiek);
+let message;
+if (wiek >= 21) {
+    message = "Możesz wejść do lokalu i kupić alkohol.";
+} else if (wiek >= 19) {
+    message = "Możesz wejść do lokalu, ale nie możesz kupić alkoholu.";
+} else {
+    message = "Nie możesz wejść do lokalu.";
+}
+console.log(message);
