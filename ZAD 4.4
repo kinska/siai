@@ -1,0 +1,27 @@
+let randomValue = Math.floor(Math.random() * 6);
+let userQuestion = prompt("Zadaj pytanie szklanej kuli:");
+let answer; // Zmienna na końcową odpowiedź.
+switch (randomValue) {
+    case 0:
+        answer = "Zdecydowanie tak!";
+        break;
+    case 1:
+        answer = "Nie licz na to.";
+        break;
+    case 2:
+        answer = "Może... Kto wie?";
+        break;
+    case 3:
+        answer = "Tak, ale będziesz musiał się postarać.";
+        break;
+    case 4:
+        answer = "To nie jest dobry pomysł.";
+        break;
+    case 5:
+        answer = "Nie jestem pewna, spróbuj ponownie później.";
+        break;
+    default:
+        answer = "Szklana kula jest w naprawie."; // Dla bezpieczeństwa.
+}
+console.log("Twoje pytanie:", userQuestion);
+console.log("Odpowiedź szklanej kuli:", answer);
